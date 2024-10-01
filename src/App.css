@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.Error-Color {
+  color: red;
+}
