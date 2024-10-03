@@ -33,8 +33,8 @@ const Login = () => {
   });
 
   const staticCredentials = {
-    email: "admin@gmail.com",
-    password: "hello",
+    email: "nitesh@gmail.com",
+    password: "nitesh",
   };
 
   const submit = (data) => {
@@ -109,8 +109,8 @@ const Login = () => {
                 <figure>
                   <img src={signupImages} alt="Example" />
 
-                  <h3>email : admin@gmail.com</h3>
-                  <h3>password : hello</h3>
+                  <h3>email : nitesh@gmail.com</h3>
+                  <h3>password : nitesh</h3>
                 </figure>
               </div>
             </div>

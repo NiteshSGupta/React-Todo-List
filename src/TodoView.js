@@ -48,6 +48,18 @@ const TodoView = () => {
     localStorage.setItem("tasks", JSON.stringify(updatedTasks));
   });
 
+
+  const handleToggle = useCallback((index) => {
+    const checkbox = document.getElementById('toggleCheckbox');
+  
+    if (!checkbox.checked) {
+      alert("dfghdft");
+      console.log('Checkbox is checked');
+    } else {
+      console.log('Checkbox is unchecked');
+    }
+  });
+
   return (
     <div className="bg-body">
       <div className="container_todo">
@@ -75,11 +87,17 @@ const TodoView = () => {
               <div key={index} id="list-container">
                 <div>
                   <h3>
-                    <span className="indexclass">{index + 1}</span>
+                    <span className="indexclass" id="toggleCheckbox">{index + 1}</span>
                     <span>{task}</span>
                   </h3>
                 </div>
                 <span>
+
+<label class="switch">
+                    <input type="checkbox" onClick={() => handleToggle(index)} />
+                    <span class="slider round"></span>
+                  </label>
+
                   <button
                     className="editButton"
                     type="button"
